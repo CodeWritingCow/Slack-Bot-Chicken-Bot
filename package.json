@@ -1,0 +1,21 @@
+{
+  "name": "slack-bot-chicken-bot",
+  "version": "1.0.0",
+  "description": "Ask this Slack bot \"Why did the chicken cross the road?\" It will tell you why!",
+  "main": "chickenBot.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Slack",
+    "Node.js",
+    "chicken",
+    "bots",
+    "comedy"
+  ],
+  "author": "Gary Pang",
+  "license": "ISC",
+  "dependencies": {
+    "botkit": "^0.4.9"
+  }
+}
