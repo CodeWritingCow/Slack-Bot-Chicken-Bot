@@ -2,7 +2,7 @@ var Botkit = require('botkit');
 
 // Bot tells random joke
 function getResponse() {
-	var responses = [
+	var jokes = [
 	'There was a car coming.',
 	'To get to the other side.',
 	'To get the newspaper.',
@@ -11,7 +11,7 @@ function getResponse() {
 	'Because the light was green.',
 	'I could tell you, but then the Chicken Mafia would kill me.'
 	];
-	return responses[Math.floor(Math.random() * responses.length)];
+	return jokes[Math.floor(Math.random() * jokes.length)];
 }
 
 var controller = Botkit.slackbot({
