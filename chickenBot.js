@@ -17,7 +17,7 @@ var controller = Botkit.slackbot({
 });
 
 var bot = controller.spawn({
-	token: process.env.BOT_API_KEY
+	token: process.env.BOT_API_KEY || require('./token')
 }).startRTM();
 
 controller.hears(['why did the chicken cross the road'], 'direct_message, direct_mention, mention', function(bot, message) {
