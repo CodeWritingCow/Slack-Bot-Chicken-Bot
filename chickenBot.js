@@ -1,4 +1,6 @@
 var Botkit = require('botkit');
+
+// Bot tells random joke
 function getResponse() {
 	var responses = [
 	'There was a car coming.',
@@ -20,6 +22,13 @@ var bot = controller.spawn({
 	token: process.env.BOT_API_KEY || require('./token')
 }).startRTM();
 
+
+// Bot listens for user asking 'why did the chicken cross the road.' Responds by telling joke.
 controller.hears(['why did the chicken cross the road'], 'direct_message, direct_mention, mention', function(bot, message) {
 	bot.reply(message, getResponse());
+});
+
+// Bot listens for user saying hi or mentioning 'chicken-bot.' Responds with chicken emoji.
+controller.hears(['hi', 'hello', 'howdy'], 'direct_message, direct_mention, mention', function(bot, message) {
+	bot.reply(message, ':chicken:');
 });
