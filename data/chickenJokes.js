@@ -8,7 +8,9 @@ module.exports = {
 		'Because it wanted to find out what those jokes were about.',
 		'To boldly go where no chicken has gone before!',
 		'Because the light was green.',
-		'I could tell you, but then the Chicken Mafia would kill me.'
+		'I could tell you, but then the Chicken Mafia would kill me.',
+		"Because North Korea's long-range missiles can't reach that far.",
+		"Because you didn't cook it!"
 		];
 		return jokes[Math.floor(Math.random() * jokes.length)];
 	}
